@@ -52,7 +52,24 @@ ANTHROPIC_API_KEY=your_anthropic_api_key_here
 
 ## 🎯 Usage
 
-Run the interactive application:
+### Web UI (Recommended)
+
+Run the interactive web interface with Streamlit:
+```bash
+streamlit run app.py
+```
+
+The web UI provides:
+- **Visual Interface**: Clean, modern interface with sidebar navigation
+- **Interactive Demos**: Hands-on experience with LangChain features
+- **Real-time Feedback**: See results instantly as you interact
+- **Multiple Demos**: Basic LLM, Prompt Templates, Chains, Memory, and RAG
+
+The web UI will open automatically in your browser at `http://localhost:8501`
+
+### CLI Application
+
+Run the command-line interactive application:
 ```bash
 python main.py
 ```
@@ -185,7 +202,8 @@ Structure LLM outputs:
 
 ```
 ChainItUp/
-├── main.py                 # Interactive application entry point
+├── app.py                  # Streamlit web UI (recommended)
+├── main.py                 # CLI interactive application
 ├── requirements.txt        # Python dependencies
 ├── .env.example           # Environment variables template
 ├── .env                   # Your API keys (create this)
